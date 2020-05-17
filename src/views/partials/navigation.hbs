@@ -1,0 +1,48 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <class class="container">
+    <a class="navbar-brand" href="/">Inicio</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+      aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about">Sobre Nosotros</a>
+        </li>
+      </ul>
+      <ul>
+        <class class="navbar ml-auto">
+          <li>
+            <class class="nav-items"><a href="/users/signin" class="nav-link">Login</a></class>
+          </li>
+          <li>
+            <class class="nav-items"><a href="/users/signup" class="nav-link">Register</a></class>
+          </li>
+        </class>
+      </ul>
+     {{#if user}}
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Notas
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="/notes/add">Crear una nota</a>
+          <a class="dropdown-item" href="/notes">Ver Notas</a>
+          <a class="dropdown-item" href="/users/logout">Salir</a>
+        </div>
+      </div>
+       {{/if}}
+    </div>
+  
+  </class>
+   
+
+</nav>
