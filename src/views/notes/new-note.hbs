@@ -1,22 +1,22 @@
-<div-col-md-4>
-<card class="text center">
-    <card class="header">
-        <h3>New Notes</h3>
-        <div class="card body">
-            <form action="/notes/new-note" method="POST">
-               <form-group>
-                
-                 <input type="text" name="title" class="form-control" placeholder="title" autofocus>  
-                
-               </form-group>
-               <form-group>
-                   <textarea name="description" placeholder="descripcion"></textarea>
-               </form-group>
-               <form-group>
-                   <button class="btn btn-primary btn-block">Save</button>
-               </form-group>
-            </form>
-        </div>
-    </card>
-</card>
-</div-col-md-4>
+<div class="row">
+    <div class="col-md-6 mx-auto">
+        <card class="text center">
+            <card class="header">
+                <h3 class="text-center">Comentario</h3>
+                <div class="card body">
+                    <form action="/notes/new-note" method="POST">
+                        <form-group>
+                            <input type="text" name="title" class="form-control" placeholder="title" autofocus>
+                        </form-group>
+                        <form-group>
+                            <textarea class="form-control" name="description" placeholder="descripcion"></textarea>
+                        </form-group>
+                        <form-group>
+                            <button class="btn btn-primary btn-block">Save</button>
+                        </form-group>
+                    </form>
+                </div>
+            </card>
+        </card>
+    </div>
+</div>

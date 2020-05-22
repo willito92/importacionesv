@@ -34,13 +34,13 @@ notesCtrl.renderEditForm = async (req, res) => {
 notesCtrl.updateNote = async(req, res) => {
     const {title, description}=req.body;
     await Note.findByIdAndUpdate(req.params.id, {title, description})
-    req.flash('success_msg', 'nota actualizada');
+    req.flash('success_msg', 'Comentario actualizado');
     res.redirect('/notes');
 }
 
 notesCtrl.deleteNote = async(req, res) => {
     await Note.findByIdAndDelete(req.params.id);
-    req.flash('success_msg', 'nota eliminada');
+    req.flash('success_msg', 'Comentario Eliminado');
     res.redirect('/notes')
 }
 
