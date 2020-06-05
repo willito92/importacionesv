@@ -1,0 +1,23 @@
+<div class="col-md-4 mx-auto">
+<div class="card">
+    <div class="card-header">
+        <h3>Editar Pedido</h3>
+        <div class="card body">
+            <form action="/orders/edit/{{order._id}}?_method=PUT" method="POST">
+            <form-group>
+                <input type="hidden" name="_method" value="PUT">
+                <input type="text" name="producto" class="form-control" value="{{order.producto}}" disabled>
+            </form-group>
+            <form-group>
+                <input type="number" name="cantidad" class="form-control" value="{{order.cantidad}}">
+            </form-group>
+            <form-group>
+                <button class="btn btn-primary btn-block">
+                    Aceptar
+                </button>
+            </form-group>
+            </form>
+        </div>
+    </div>
+</div>
+</div>

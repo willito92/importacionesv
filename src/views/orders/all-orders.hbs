@@ -1,0 +1,28 @@
+
+
+
+<table class="table table-striped text-white">
+  <thead>
+    <tr>
+      <th scope="col">Fecha</th>
+      <th scope="col">Producto</th>
+      <th scope="col">Cantidad</th>
+      
+    </tr>
+  </thead>
+  {{#each orders}}
+  <tbody>
+     
+    <tr>
+      <th scope="row">{{createdAt}}</th>
+      <th scope="row">{{producto}}</th>
+      <th scope="row">{{cantidad}}</th>
+      <th scope="row"><a href="orders/edit/{{_id}}"><i class="fa fa-pencil"></i></a></th>
+      <th scope="row"><form action="/orders/delete/{{_id}}?_method=DELETE" method="POST"><input type="hidden" name="_method" value="DELETE"><button type="submit" class="btn-danger btn-lg btn-xs m-1">X</button></form></th>
+     
+    </tr>
+  
+
+  </tbody>
+  {{/each}}
+</table>

@@ -2,7 +2,6 @@ const notesCtrl = {};
 const Note = require('../models/Notes');
 
 notesCtrl.renderNoteForm = (req, res) => {
-    console.log(req.user);
     res.render('notes/new-note');
 }
 

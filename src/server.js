@@ -11,6 +11,8 @@ const passport = require('passport');
 
 
 
+
+
 //inicialitations
 const app = express();
 require('./config/passport');
@@ -57,6 +59,7 @@ app.use((req, res, next) =>{
 app.use(require('./routes/index.routes'));
 app.use(require('./routes/notes.routes'));
 app.use(require('./routes/users.routes'));
+app.use(require('./routes/orders.routes'));
 
 
 
